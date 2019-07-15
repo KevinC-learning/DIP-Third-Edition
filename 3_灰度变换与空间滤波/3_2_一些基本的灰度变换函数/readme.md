@@ -3,7 +3,7 @@
 
 $$T(r) = L-r$$
 
-#### 运行*
+### 运行
 ```python
 python TEST_image_reverse.py
 ```
@@ -18,7 +18,7 @@ $$T(r) = c\lg(r+1)$$
 
 由于**对数函数的导数**随自变量的增大而减小，对数变换将**输入窄范围的低灰度值扩展为范围宽的灰度值和宽范围的高灰度值压缩为映射为范围窄灰度值**。从视觉上，通常是图片变得更亮了
 
-#### 运行
+### 运行
 ```python
 python TEST_logarithmic_transformation.py
 ```
@@ -33,7 +33,7 @@ $$s=cr^{\gamma}$$
 
 可通过调整$\gamma$来调整该变换，最常用于**伽马校正**与**对比度增强**
 
-#### 运行实现代码
+### 运行实现代码
 ```python
 python TEST_gamma_transformation.py
 ```
@@ -42,7 +42,7 @@ python TEST_gamma_transformation.py
 
 对比度拉伸是**扩展图像灰度级动态范围**的处理。通过在灰度级中确定两个点来控制变换函数的形状。下面是对比度拉伸函数中阈值处理的代码示例，阈值为平均值。
 
-#### 运行
+### 运行
 ```python
 python TEST_contrast_stretch.py
 ```
@@ -53,7 +53,7 @@ python TEST_contrast_stretch.py
 - 将感兴趣的灰度范围内的值显示为一个值（比如0），而其他范围的值为另外一个值（255）。
 - 将感兴趣的灰度范围内的值显示为一个值（比如0），而其他范围的值不变。
 
-#### 运行
+### 运行
 ```python
 python TEST_grayscale_layer.py
 ```
@@ -62,7 +62,7 @@ python TEST_grayscale_layer.py
 
 在灰度图中，像素值的范围为`[0, 255]`，即共有256级灰度。在计算机中，我们使用8比特数来表示每一个像素值。因此可以提取出不同比特层面的灰度图。比特层面分层可用于**图片压缩**：只储存较高比特层（为什么使用较高层，而不是较低层？通过二进制转换，我们知道较高层在数值中的贡献更大）；如使用高四位比特层表示原有的八层比特平面。
 
-#### 运行
+### 运行
 ```python
 python TEST_extract_bit_layer.py
 ```
