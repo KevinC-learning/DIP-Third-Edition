@@ -1,3 +1,5 @@
+![](http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}}=\\sum_{i:r(i,j)=1}{\\big((\\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\\big)x_k^{(i)}}+\\lambda \\xtheta_k^{(j)})
+
 # 图像反转
 获取像素值在`[0, L]`范围内的图像的反转图像，即为负片。适用于**增强图像中白色或者灰色的区域**，尤其当黑色在图片中占主地位时候
 
